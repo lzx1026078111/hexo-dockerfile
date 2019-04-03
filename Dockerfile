@@ -10,6 +10,7 @@ RUN git clone -b master https://$USERNAME:$PASSWORD@github.com/lzx1026078111/hex
 cp -r hexo-docker/source/* source/ && \
 rm source/_posts/hello-world.md && \
 cp hexo-docker/_config.yml . && \
+cp hexo-docker/.vimrc /root/ && \
 rm -rf hexo-docker && \
 hexo g
 
